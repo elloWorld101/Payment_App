@@ -50,8 +50,6 @@ The app will be running on \`http://localhost:5173/`.
 
 - **Path:** \`/\`
 - **Description:** The landing page of the application, it navigates user to either signup page or the dashboard page depending on whether they are logged in or not
-- **Components Used:**
-  - \`Landing\`
 
 ### Signup
 
