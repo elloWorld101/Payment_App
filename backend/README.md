@@ -16,7 +16,7 @@ Make sure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/shubhhhGT/Payments_App/tree/main/backend.git
+   git clone https://github.com/elloWorld101/Payment_App
    cd backend
    ```
 
@@ -31,7 +31,7 @@ Make sure you have the following installed:
 Create a `.env` file in the root directory and add the necessary environment variables:
 
 ```plaintext
-PORT=3000
+PORT= your_port
 DATABASE_URL=your_database_url
 JWT_SECRET=your_jwt_secret
 ```
@@ -44,13 +44,13 @@ To start the server, use the following command:
 node index.js
 ```
 
-The server will be running on \`http://localhost:3000/`.
+The server will be running on \`http://localhost:PORT/`.
 
 ## API Endpoints
 
 ### Authentication Routes
 
-#### POST /auth/signup
+#### POST /user/signup
 
 - Description: Sign up a new user.
 - Request Body:
@@ -63,7 +63,7 @@ The server will be running on \`http://localhost:3000/`.
   }
   ```
 
-#### POST /auth/signin
+#### POST /user/signin
 
 - Description: Sign in an existing user.
 - Request Body:
@@ -95,7 +95,7 @@ The server will be running on \`http://localhost:3000/`.
 
 ### User Routes
 
-#### PUT /user
+#### PUT /user/update
 
 - Description: Update the credentials of the authenticated user. It is optional, a user can update all or any one or two fields.
 - Headers: \`Authorization: Bearer <token>\`
@@ -108,21 +108,20 @@ The server will be running on \`http://localhost:3000/`.
   }
   ```
 
-#### GET /user/bulk
+#### GET /user/users
 
 - Description: Search for a friend.
 - Headers: \`Authorization: Bearer <token>\`
 
-#### GET /user/getCurrentUser
+#### GET /user/me
 
-- Description: Get the details of the currently authenticated user.
-- Headers: \`Authorization: Bearer <token>\`
+- Description: Checks if the user is already signed up or not.
 
 ## Middleware
 
-### Auth Middleware
+### User Middleware and Account Middleware
 
-The \`auth\` middleware is used to protect routes that require authentication. It verifies the JWT token provided in the request headers.
+The \`user\` and \`account`\ middlewares are used to protect routes that require authentication. It verifies the JWT token provided in the request headers.
 
 ## Contributing
 
