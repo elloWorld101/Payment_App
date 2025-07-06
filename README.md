@@ -22,7 +22,7 @@ The backend provides several API routes for managing accounts, authentication, a
 
 ### Frontend
 
-The frontend includes several pages like Dashboard, Home, Signin, Signup, Send Money, and Settings. Each page provides specific functionalities to the user. Detailed descriptions of these pages can be found in the frontend's [README file](./frontend/README.md).
+The frontend includes several pages like Landing, Signup, Signin, Dashboard, Update and Send Money. Each page provides specific functionalities to the user. Detailed descriptions of these pages can be found in the frontend's [README file](./frontend/README.md).
 
 ## Getting Started
 
@@ -61,7 +61,7 @@ The frontend includes several pages like Dashboard, Home, Signin, Signup, Send M
 
 1. **Configure environment variables**:
 
-   Create a `.env` file in the `backend` directory and add your configurations (e.g., database connection string, JWT secret).
+   Create a `.env` file in the `backend` directory and add your configurations (e.g., database connection string, JWT secret, Port).
 
 2. **Start the backend server**:
 
