@@ -1,6 +1,6 @@
 # Payment App Backend
 
-This is the backend server for the Payment App. It provides various API endpoints for account management, user authentication, and user interaction. The server is built with Node.js and Express. The password's are hashed with the use of a cryptographic hashing algorithm called argon2. I have used zod for input validation. I have used transactions in MongoDB to transfer the moeny from one user to another.
+This is the backend server for the Payment App. It provides various API endpoints for account management, user authentication, and user interaction. The server is built with Node.js and Express. Argon2 used for hashing the password. Zod library used for input validation. Transactions in MongoDB used to transfer the money from one user to another.
 
 ## Getting Started
 
