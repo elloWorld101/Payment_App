@@ -31,7 +31,7 @@ Make sure you have the following installed:
 Create a `.env` file in the root directory and add the necessary environment variables:
 
 ```plaintext
-VITE_BASE_URL=your_backend_api_url
+VITE_BACKEND_URL=your_backend_api_url
 ```
 
 ### Running the App
