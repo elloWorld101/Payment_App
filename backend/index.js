@@ -7,7 +7,10 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 app.use(express.json()); //used to read the body of the incoming JSON object 
-app.use(cors());
+app.use(cors({
+  origin: "https://payment-app-iota.vercel.app", 
+  credentials: true
+}));
 
 app.use("/user", userRouter);
 app.use("/account", accountRouter);
