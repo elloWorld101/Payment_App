@@ -7,8 +7,14 @@ const dotenv = require("dotenv");
 dotenv.config();
 
 app.use(express.json()); //used to read the body of the incoming JSON object 
+
+const allowedOrigins = [
+  "http://localhost:5173",                     // for local frontend
+  "https://payment-app-iota.vercel.app"       // for deployed frontend
+];
+
 app.use(cors({
-  origin: "https://payment-app-iota.vercel.app", 
+  origin: allowedOrigins,
   credentials: true
 }));
 
