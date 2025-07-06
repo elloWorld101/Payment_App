@@ -67,10 +67,10 @@ The frontend includes several pages like Dashboard, Home, Signin, Signup, Send M
 
    ```sh
    cd backend
-   npm start
+   node index.js
    ```
 
-   The backend server will start on `http://localhost:3000`.
+   The backend server will start on `http://localhost:YOUR_PORT`.
 
 #### Frontend
 
