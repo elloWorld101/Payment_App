@@ -38,7 +38,7 @@ The frontend includes several pages like Dashboard, Home, Signin, Signup, Send M
 
    ```sh
    git clone https://github.com/elloWorld101/Payment_App
-   cd payments-app
+   cd Payments_App
    ```
 
 2. **Install backend dependencies**:
