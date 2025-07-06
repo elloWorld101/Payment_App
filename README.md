@@ -61,7 +61,7 @@ The frontend includes several pages like Landing, Signup, Signin, Dashboard, Upd
 
 1. **Configure environment variables**:
 
-   Create a `.env` file in the `backend` and `frontennd` directory and add your configurations (e.g., database connection string, JWT secret, Port, your database url).
+   Create a `.env` file in the `backend` and `frontend` directory and add your configurations (e.g., database connection string, JWT secret, Port, your database url).
 
 2. **Start the backend server**:
 
