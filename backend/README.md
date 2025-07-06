@@ -17,6 +17,7 @@ Make sure you have the following installed:
 
    ```bash
    git clone https://github.com/elloWorld101/Payment_App
+   cd Payment_App
    cd backend
    ```
 
