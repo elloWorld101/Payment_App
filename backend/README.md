@@ -121,7 +121,7 @@ The server will be running on \`http://localhost:PORT/`.
 
 ### User Middleware and Account Middleware
 
-The \`user\` and \`account`\ middlewares are used to protect routes that require authentication. It verifies the JWT token provided in the request headers.
+The \`user\` and \`account\` middlewares are used to protect routes that require authentication. It verifies the JWT token provided in the request headers.
 
 ## Contributing
 
