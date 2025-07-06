@@ -37,7 +37,7 @@ The frontend includes several pages like Dashboard, Home, Signin, Signup, Send M
 1. **Clone the repository**:
 
    ```sh
-   git clone https://github.com/yourusername/payments-app.git
+   git clone https://github.com/elloWorld101/Payment_App
    cd payments-app
    ```
 
