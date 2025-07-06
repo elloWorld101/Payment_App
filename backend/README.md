@@ -44,7 +44,7 @@ To start the server, use the following command:
 node index.js
 ```
 
-The server will be running on \`http://localhost:PORT`.
+The server will be running on \`http://localhost:PORT\`.
 
 ## API Endpoints
 
