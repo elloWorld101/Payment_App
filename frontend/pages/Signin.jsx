@@ -33,7 +33,7 @@ export function Signin(){
 
     return(
         <div class="flex justify-center h-screen bg-slate-400 items-center">
-            <div class="bg-white rounded-lg p-5 w-95">
+            <div class="bg-white rounded-lg p-5 w-90">
             
                 <Header heading={"Sign In"} para={"Enter your credentials to access your account"} />
                 <InputBox header={"Email"} placeholder={"johndoe@example.com"} setStateVariable={setUsername}/>
