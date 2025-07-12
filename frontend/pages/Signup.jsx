@@ -51,7 +51,7 @@ export function Signup(){
     return(
 
         <div class="flex justify-center h-screen bg-blue-400 items-center">
-            <div class=" bg-white rounded-lg p-5 w-90
+            <div class=" bg-white rounded-lg p-5 lg:w-90
                 w-[75%]">
 
                 <Header heading={"Sign Up"} para={"Enter your information to create an account"} />
