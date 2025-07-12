@@ -42,7 +42,8 @@ export function Update(){
 
     return(
         <div class="flex h-screen justify-center items-center bg-blue-400">
-            <div class="bg-white rounded-md p-5 w-90">
+            <div class="bg-white rounded-md p-5 w-90
+                w-[75%]">
                 <Header heading={"Update Details"} para={"Please enter only the details you want to update"} />
                 <InputBox  placeholder={"First Name"} setStateVariable={setFirstName} />
                 <InputBox  placeholder={"Last Name"} setStateVariable={setLastName} />
