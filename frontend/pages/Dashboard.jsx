@@ -98,12 +98,18 @@ export function Dashboard(){
     return(
         <div class="h-screen bg-blue-400">
         <div class=" bg-blue-400 flex flex-col items-center justify-center"> 
-            <div class="flex p-5 justify-between border-gray-200 w-150">
+            <div class="flex p-5 justify-between border-gray-200 lg:w-1/2
+                w-[90%]
+            ">
 
-                <h2 class="text-2xl font-semibold ">Payments App</h2>
-                {userSkeleton? <UserSkeleton/> : <div class="font-medium">
+
+                <h2 class="lg:text-2xl font-semibold lg:p-0 text-lg">Payments App</h2>
+
+                {userSkeleton? <UserSkeleton/> : <div 
+                class="font-medium pl-3 lg:p-0 text-sm">
                     <p>Hello, {user.name} <button //onClick={update}
-                    class="px-3 ml-2 text-lg rounded-full bg-teal-800 text-white font-semibold p-1 group relative ">
+                    class="lg:px-3 lg:ml-2 lg:text-lg lg:rounded-full lg:bg-teal-800 lg:text-white lg:font-semibold lg:p-1 
+                            text-md rounded-full bg-teal-800 text-white px-2.5 p-1">
                         {user.box}
                         <div class="absolute top-full text-black right-3 bg-white rounded-md p-3 mt-1 shadow-md scale-y-0 group-focus:scale-y-100 origin-top duration-200">
                             <a class="active" onClick={update}>Update</a>
@@ -114,13 +120,15 @@ export function Dashboard(){
             </div>
 
             
-            <div class="bg-white w-150 rounded-lg m-3 p-5">
+            <div class="bg-white lg:w-1/2  rounded-lg lg:m-3 lg:p-5
+                        p-2 w-[90%]
+                        ">
                 <h2 class="px-4 text-xl text-gray-400">Your Balance</h2>
                 <h2 class="px-4 text-4xl font-bold pt-2">${balance}</h2>
             </div>
 
-            <div class="p-4 relative">
-              <div className="absolute inset-y-11 left-10 flex items-center pl-2 pointer-events-none">
+            <div class="relative lg:w-1/2 mb-2 w-[90%]">
+              <div className="absolute inset-y-7 left-6 flex items-center pl-2 pointer-events-none">
                     <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -138,7 +146,7 @@ export function Dashboard(){
                 </div>
                 
             <input type="text" placeholder ="Search users..."  onChange={setter}
-            class="border border-white outline-0 mt-2 p-1.5 rounded-md outline-white  pl-14 placeholder-gray-700 font-semibold w-150 bg-white" 
+            class="border border-white outline-0 mt-3 p-1.5 rounded-md outline-white w-full pl-14 placeholder-gray-700 font-semibold bg-white" 
             />
 
             </div>
@@ -148,17 +156,24 @@ export function Dashboard(){
                 data.map(function(data){
                     const box = data.firstName.charAt(0).toUpperCase() + data.lastName.charAt(0).toUpperCase();
                     return(
-
-                        <div class="flex px-4 justify-between p-2 bg-blue-400">
-                            <div class="bg-white w-150 rounded-lg flex justify-between p-2">
+                    
+                        <div class="flex justify-between my-3 bg-blue-400 lg:w-1/2 lg:items-center flex-col
+                        w-[90%]">
+                            <div class="bg-white  rounded-lg flex lg:w-[90%] justify-between p-2">
                                 <div class="flex">
-                                    <button class="px-4 ml-2 rounded-full bg-purple-300 p-1 ">{box}</button>
-                                    <h2 class="font-semibold text-xl p-2.5">{data.firstName} {data.lastName}</h2>
+                                    <button class="lg:px-4 lg:ml-2 lg:rounded-full lg:bg-purple-300 lg:p-1 
+                                            px-3 ml-2 rounded-full bg-purple-300 p-0.5">
+                                                {box}</button>
+                                    <h2 class="font-semibold lg:text-xl p-2.5
+                                            text-sm 
+                                    ">{data.firstName} {data.lastName}</h2>
                                 </div>
                                 <button onClick={()=>{
                                     send(box, data.firstName, data.lastName,data.id)
                                 }}
-                                class="bg-blue-500 hover:bg-gray-900 text-white rounded-lg text-md px-5 font-semibold" 
+                                class="bg-blue-500 hover:bg-blue-800 text-white rounded-lg lg:text-md lg:px-5 font-semibold
+                                        text-sm px-3
+                                " 
                                 >Send Money</button>
                             </div>
                         </div>
