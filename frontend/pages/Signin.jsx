@@ -40,7 +40,8 @@ export function Signin(){
 
     return(
         <div class="flex justify-center h-screen bg-blue-400 items-center">
-            <div class="bg-white rounded-lg p-5 w-95">
+            <div class="bg-white rounded-lg p-5 w-95
+                w-[75%]">
             
                 <Header heading={"Sign In"} para={"Enter your credentials to access your account"} />
                 <InputBox placeholder={"Email"} setStateVariable={setUsername}/>
