@@ -1,8 +1,8 @@
 
 export function Skeleton(){
     return (
-        <div>
-        <div class = "flex p-3 justify-between animate-pulse">
+        <div class="flex items-center flex-col">
+        <div class = "flex p-3 justify-between animate-pulse w-150">
             <div className="w-100 space-y-4  ">
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gray-300"></div>
@@ -20,7 +20,7 @@ export function Skeleton(){
             </div>
         </div>
 
-        <div class = "flex p-3 justify-between animate-pulse">
+        <div class = "flex p-3 justify-between animate-pulse w-150">
             <div className="w-100 space-y-4  ">
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gray-300"></div>
@@ -38,7 +38,7 @@ export function Skeleton(){
             </div>
         </div>
 
-        <div class = "flex p-3 justify-between animate-pulse">
+        <div class = "flex p-3 justify-between animate-pulse w-150">
             <div className="w-100 space-y-4  ">
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gray-300"></div>
@@ -56,7 +56,7 @@ export function Skeleton(){
             </div>
         </div>
 
-        <div class = "flex p-3 justify-between animate-pulse">
+        <div class = "flex p-3 justify-between animate-pulse w-150">
             <div className="w-100 space-y-4  ">
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gray-300"></div>
@@ -74,7 +74,7 @@ export function Skeleton(){
             </div>
         </div>
 
-        <div class = "flex p-3 justify-between animate-pulse">
+        <div class = "flex p-3 justify-between animate-pulse w-150">
             <div className="w-100 space-y-4  ">
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gray-300"></div>
@@ -92,7 +92,7 @@ export function Skeleton(){
             </div>
         </div>
 
-        <div class = "flex p-3 justify-between animate-pulse">
+        <div class = "flex p-3 justify-between animate-pulse w-150">
             <div className="w-100 space-y-4">
                 <div className="flex items-center gap-4">
                     <div className="w-12 h-12 rounded-full bg-gray-300"></div>
