@@ -48,9 +48,7 @@ export function Update(){
                 <InputBox  placeholder={"First Name"} setStateVariable={setFirstName} />
                 <InputBox  placeholder={"Last Name"} setStateVariable={setLastName} />
                 <InputBox  placeholder={"Password"} setStateVariable={setPassword} />
-                {/* <button onClick={callUpdate}
-                class = "border w-full mt-4 p-1.5 text-white border-black rounded-md bg-gray-800 hover:bg-gray-900 font-semibold">
-                Update</button> */}
+                
                 <Footer header="Update" functionName={callUpdate} />
             </div>
         </div>
