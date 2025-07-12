@@ -3,18 +3,9 @@ import { disableAtom, loadAtom } from "../store/atoms"
 import { ButtonLoader } from "./ButtonLoader";
 
 export function Footer({header, functionName}){
-    // const [loading, setLoading] = useRecoilState(loadAtom);
+
     const isDisabled = useRecoilValue(disableAtom);
     console.log(isDisabled);
-
-
-    // function setter(){
-    //     setLoading(true);
-    // }
-
-    // function setter2(){
-    //     console.log("Inside setter2");
-    // }
 
     return(
         <div>
