@@ -42,7 +42,8 @@ export function SendMoney(){
     return(
         
         <div class="flex h-screen items-center justify-center bg-blue-400 "> 
-            <div class="bg-white rounded-md p-5 w-90">
+            <div class="bg-white rounded-md p-5 lg:w-90
+                w-[90%]">
                 <h2 class="text-3xl font-bold mb-13 text-center">Send Money</h2>   
 
                 <div class="flex ">
