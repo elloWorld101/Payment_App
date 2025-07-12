@@ -106,10 +106,10 @@ export function Dashboard(){
                 <h2 class="lg:text-2xl font-semibold lg:p-0 text-lg">Payments App</h2>
 
                 {userSkeleton? <UserSkeleton/> : <div 
-                class="font-medium pl-3 lg:p-0 text-base">
+                class="font-medium pl-3 lg:p-0 text-lg"> 
                     <p>Hello, {user.name} <button //onClick={update}
                     class="lg:px-3 lg:ml-2 lg:text-lg lg:rounded-full lg:bg-teal-800 lg:text-white lg:font-semibold lg:p-1 
-                            text-md rounded-full bg-teal-800 text-white px-2.5 p-1">
+                            text-md rounded-full bg-teal-800 text-white px-2.5 p-1 ml-1">
                         {user.box}
                         <div class="absolute top-full text-black right-3 bg-white rounded-md p-3 mt-1 shadow-md scale-y-0 group-focus:scale-y-100 origin-top duration-200">
                             <a class="active" onClick={update}>Update</a>
