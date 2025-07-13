@@ -95,6 +95,11 @@ export function Dashboard(){
 
     const debouncedValue = useDebounce(filter, 500)
 
+    function logout(){
+        localStorage.setItem('jwtToken', "");
+        navigate("/");
+    }
+
     return(
         <div class="h-screen bg-blue-400">
         <div class=" bg-blue-400 flex flex-col items-center justify-center"> 
@@ -111,8 +116,9 @@ export function Dashboard(){
                         class="lg:px-3 lg:ml-2 lg:text-lg lg:rounded-full lg:bg-teal-800 lg:text-white lg:font-semibold lg:p-1 group relative
                                 text-md rounded-full bg-teal-800 text-white px-2.5 p-1 ml-1">
                             {user.box}
-                            <div class="absolute text-sm top-full text-black right-3 bg-white rounded-md p-2 shadow-md scale-y-0 group-focus:scale-y-100 origin-top duration-200">
-                                <a class="active" onClick={update}>Update</a>
+                            <div class="absolute text-base top-full text-black right-3 bg-white rounded-md  shadow-md scale-y-0 group-focus:scale-y-100 origin-top duration-200">
+                                <a class="active hover:bg-blue-300 m-2" onClick={update}>Update</a><br />
+                                <a class="hover:bg-red-300 " onClick={logout}>Logout</a>
                             </div>
                             </button></p>
                     </div>}
