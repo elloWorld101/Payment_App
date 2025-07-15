@@ -50,6 +50,8 @@ The app will be running on \`http://localhost:5173/`.
 
 - **Path:** \`/\`
 - **Description:** The landing page of the application, it navigates user to either signup page or the dashboard page depending on whether they are logged in or not
+- **Components Used:**
+  - \`Loading\`
 
 ### Signup
 
@@ -59,6 +61,7 @@ The app will be running on \`http://localhost:5173/`.
   - \`Header\`
   - \`InputBox\`
   - \`Footer\`
+  - \`FooterHeading\`
 
 ### Signin
 
@@ -68,16 +71,22 @@ The app will be running on \`http://localhost:5173/`.
   - \`Header\`
   - \`InputBox\`
   - \`Footer\`
+  - \`FooterHeading\`
 
 ### Dashboard
 
 - **Path:** \`/dashboard\`
-- **Description:** Displays the user's balance, user information, allows the user to update their detail and displays the list of users to whom the current user can transfer money to.
+- **Description:** Displays the user's balance, user information, allows the user to update their detail, logout thier account and displays the list of users to whom the current user can transfer money to.
+- **Components Used:**
+  - \`Skeleton\`
+  - \`UserSkeleton\`
 
 ### Send Money
 
 - **Path:** \`/send\`
 - **Description:** Allows the user to send money to another user.
+- **Components Used:**
+  - \`ButtonLoader\`
 
 ### Update
 
@@ -86,6 +95,7 @@ The app will be running on \`http://localhost:5173/`.
 - **Components Used:**
   - \`Header\`
   - \`InputBox\`
+  - \`Footer\`
 
 ## Components
 
@@ -94,6 +104,11 @@ The frontend application uses a variety of reusable components, including:
 - \`Header\`
 - \`InputBox\`
 - \`Footer\`
+- \`ButtonLoader\`
+- \`FooterHeading\`
+- \`Loading\`
+- \`Skeleton\`
+- \`UserSkeleton\`
   
 ## Contributing
 
