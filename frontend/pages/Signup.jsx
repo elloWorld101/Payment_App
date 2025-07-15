@@ -6,7 +6,7 @@ import axios from 'axios'
 import { Footer } from '../components/Footer';
 import { FooterHeading } from '../components/FooterHeading';
 import { useSetRecoilState } from 'recoil';
-import { disableAtom, loadAtom } from '../store/atoms';
+import { disableAtom } from '../store/atoms';
 const BASE_URL = import.meta.env.VITE_BACKEND_URL;
 
 export function Signup(){
