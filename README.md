@@ -8,6 +8,7 @@ Welcome to the Payment App! This project provides a secure platform for transfer
 - **Account Management**: Update and Signout user credentials.
 - **Balance Management**: View current balance and transfer money.
 - **Search Friends**: Search for friends to transfer money.
+- **Optimizations**: Debouncing to reduce API calls, interactive UI to retain users.
 
 ## Project Structure
 
