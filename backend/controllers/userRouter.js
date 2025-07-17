@@ -205,7 +205,7 @@ router.get("/users", userMiddleware, async function(req,res){
             firstName: new RegExp(filter, "i") // ,'i' makes it case insensitive --> M-1
         },{
             lastName: {
-                "$regex": filter //M-2
+                "$regex": filter, //M-2
                 "$options": "i"
             } 
         }]
