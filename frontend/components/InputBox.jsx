@@ -15,7 +15,7 @@ export function InputBox({placeholder, setStateVariable}){
         }
     }
 
-    const debouncedValue = debounce(setter, 1000)
+    const debouncedValue = debounce(setter, 500)
 
     return(
             <div class="mt-2">
