@@ -41,32 +41,42 @@ router.post("/transfer", accountMiddleware, async function(req,res){
 
     if(sender.balance >=amount){
 
-        if(recieverExists){
-
-            const debit = await Account.updateOne({
-                userId: from
-            },{
+        if (amount > 0) {
+          if (recieverExists) {
+            const debit = await Account.updateOne(
+              {
+                userId: from,
+              },
+              {
                 $inc: {
-                    balance: -amount
-                }
-            }).session(session);
+                  balance: -amount,
+                },
+              }
+            ).session(session);
 
-            const credit = await Account.updateOne({
-                userId: to
-            },{
-                $inc:{
-                    balance: amount
-                }
-            }).session(session);
+            const credit = await Account.updateOne(
+              {
+                userId: to,
+              },
+              {
+                $inc: {
+                  balance: amount,
+                },
+              }
+            ).session(session);
 
             await session.commitTransaction();
-            if(debit && credit){
-                return res.json({
-                    msg: "Transfer successfull"
-                })
+            if (debit && credit) {
+              return res.json({
+                msg: "Transfer successfull",
+              });
             }
             session.endSession();
-
+          }
+        } else {
+          return res.json({
+            msg: `Goli Beta, Masti nai`
+          });
         }
     }else{
         return res.json({
