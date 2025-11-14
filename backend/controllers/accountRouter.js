@@ -41,7 +41,7 @@ router.post("/transfer", accountMiddleware, async function(req,res){
 
     if(sender.balance >=amount){
 
-        if (amount > 0) {
+        // if (amount > 0) {
           if (recieverExists) {
             const debit = await Account.updateOne(
               {
